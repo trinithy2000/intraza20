@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/gradient">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/DCP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorFondoDatosLP">
+
+        <TextView
+            android:id="@+id/textoInfoDCNP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorFondoDatoArticuloLP"
+            android:gravity="center"
+            android:text="@string/datos_M"
+            android:textColor="@android:color/white"
+            android:textSize="30sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/infoDCP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/DCP"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/cliente_dot"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textoClienteDCP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/cliente"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:layout_below="@+id/infoDCP"
+        android:layout_alignStart="@+id/infoDCP" />
+
+    <AutoCompleteTextView
+        android:hint="@string/blanco"
+        android:id="@+id/clienteDCP"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:labelFor="@+id/clienteDCP"
+        android:selectAllOnFocus="true"
+        android:layout_alignTop="@+id/textoClienteDCP"
+        android:layout_alignEnd="@+id/infoDCP"
+        android:maxLines="1" />
+
+    <Button
+        android:id="@+id/botonAbreSpinnerDCP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/clienteDCP"
+        android:layout_toEndOf="@+id/clienteDCP"
+        android:text="@string/dots"
+        android:textSize="20sp" />
+
+    <Spinner
+        android:id="@+id/spinnerInvisibleClienteDCP"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:prompt="@string/promptSpinnerCliente"
+        android:textSize="20sp"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:layout_width="600dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/clienteDCP"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/cancelarBotonDialogoDCP"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:background="@null"
+            android:drawableTop="@drawable/boton_cancel"
+            android:text="@string/cancelar_M"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/textSizeCircularButons"
+            android:typeface="normal" />
+
+        <Button
+            android:id="@+id/consultarBotonDialogoDCP"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:background="@null"
+            android:drawableTop="@drawable/boton_ok"
+            android:text="@string/consultar_M"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/textSizeCircularButons"
+            android:typeface="normal" />
+
+
+    </LinearLayout>
+</RelativeLayout>

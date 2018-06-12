@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/gradient">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/DMOP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorFondoDatosLP">
+
+        <TextView
+            android:id="@+id/tituloDMOP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorFondoDatoArticuloLP"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="30sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textoObservacionesDMOP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/DMOP"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/observaciones_dot"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+    <EditText
+        android:hint="@string/blanco"
+        android:id="@+id/observacionesDMOP"
+        android:layout_width="450dp"
+        android:layout_height="155dp"
+        android:layout_alignStart="@+id/textoObservacionesDMOP"
+        android:layout_below="@+id/textoObservacionesDMOP"
+        android:layout_marginTop="5dp"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:gravity="top"
+        android:inputType="none"
+        android:labelFor="@+id/observacionesDMOP" />
+
+    <Button
+        android:id="@+id/aceptarDMOP"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:drawableTop="@drawable/boton_ok"
+        android:text="@string/aceptar_M"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/textSizeCircularButons"
+        android:typeface="normal"
+        android:gravity="center"
+        android:layout_alignTop="@+id/textoObservacionesDMOP"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="30dp" />
+</RelativeLayout>

@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/gradient">
+
+    <RelativeLayout
+        android:id="@+id/DCNPE"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/datoLP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorFondoDatoArticuloLP"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="30sp" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/datosLP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/DCNPE"
+        android:layout_marginTop="10dp"
+        android:background="@null">
+
+        <TextView
+            android:id="@+id/infoDatosAnterioresLP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/no_data"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/datoCantidadAnteriorLP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/infoDatosAnterioresLP"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/ultima_cantidad"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/datoTarifaAnteriorLP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/datoCantidadAnteriorLP"
+            android:layout_marginStart="60dp"
+            android:text="@string/ultima_tarifa_0_kg"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/infoDatosNuevoLP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/datoTarifaAnteriorLP"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/rellene_pedido_dot"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textoCantidadKgNuevoLP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/textoTarifaNuevoLP"
+            android:layout_below="@+id/infoDatosNuevoLP"
+            android:layout_marginTop="15dp"
+            android:text="@string/kilogramos_dot"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textoTarifaNuevoLP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textoCantidadKgNuevoLP"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/tarifa_cliente_dot"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <EditText
+            android:hint="@string/blanco"
+            android:id="@+id/cantidadKgNuevoLP"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textoCantidadKgNuevoLP"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/textoCantidadKgNuevoLP"
+            android:inputType="numberDecimal|numberSigned"
+            android:labelFor="@+id/cantidadKgNuevoLP"
+            android:maxLength="@integer/longitudCantidadLP"
+            android:nextFocusDown="@+id/cantidadUdNuevoLP"
+            android:selectAllOnFocus="true"
+            android:text="@string/menosUno" />
+
+        <TextView
+            android:id="@+id/textoCantidadUdNuevoLP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/cantidadKgNuevoLP"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/cantidadKgNuevoLP"
+            android:text="@string/unidades_dot"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <EditText
+            android:hint="@string/blanco"
+            android:id="@+id/cantidadUdNuevoLP"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textoCantidadUdNuevoLP"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/textoCantidadUdNuevoLP"
+            android:inputType="numberSigned"
+            android:labelFor="@+id/cantidadUdNuevoLP"
+            android:maxLength="@integer/longitudCantidadLP"
+            android:nextFocusDown="@+id/tarifaNuevoLP"
+            android:selectAllOnFocus="true"
+            android:text="@string/cero" />
+
+        <EditText
+            android:hint="@string/blanco"
+            android:id="@+id/tarifaNuevoLP"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textoTarifaNuevoLP"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/textoTarifaNuevoLP"
+            android:inputType="numberDecimal"
+            android:labelFor="@+id/tarifaNuevoLP"
+            android:maxLength="@integer/longitudPrecioLP"
+            android:nextFocusDown="@+id/checkFijarTarifaLP"
+            android:selectAllOnFocus="true" />
+
+        <CheckBox
+            android:id="@+id/checkFijarTarifaLP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textoTarifaNuevoLP"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/tarifaNuevoLP"
+            android:nextFocusDown="@+id/checkSuprimirTarifaLP"
+            android:text="@string/fijar"
+            android:textSize="19sp" />
+
+        <CheckBox
+            android:id="@+id/checkSuprimirTarifaLP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textoTarifaNuevoLP"
+            android:layout_marginStart="5dp"
+            android:layout_toStartOf="@+id/tarifaNuevoLP"
+            android:nextFocusDown="@+id/observacionesLP"
+            android:text="@string/suprimir"
+            android:textSize="19sp" />
+
+        <TextView
+            android:id="@+id/textoTarifaListaLP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/checkSuprimirTarifaLP"
+            android:layout_marginStart="53dp"
+            android:text="@string/tarifa_lista_4_75_kg"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textoPrecioTotalLP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textoTarifaListaLP"
+            android:layout_marginStart="30dp"
+            android:layout_toEndOf="@+id/textoTarifaListaLP"
+            android:text="@string/precio_0_kg"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rLyCuadro"
+        android:layout_width="470dp"
+        android:layout_height="250dp"
+        android:layout_alignParentEnd="false"
+        android:layout_below="@+id/DCNPE"
+        android:layout_toEndOf="@+id/datosLP"
+        android:background="@drawable/layout_redondo"
+        android:padding="10sp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp">
+
+        <!-- Widgets para obtener las observaciones de la linea de pedido -->
+        <TextView
+            android:id="@+id/textoObservacionesLP"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="10dp"
+            android:text="@string/observaciones_dot"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <EditText
+            android:hint="@string/blanco"
+            android:id="@+id/observacionesLP"
+            android:layout_width="270dp"
+            android:layout_height="100dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textoObservacionesLP"
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            android:labelFor="@+id/observacionesDCNP"
+            android:maxLength="@integer/longitudObservacionesNuevoLP" />
+
+        <TextView
+            android:id="@+id/textView32"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="@string/lista_observaciones_dot"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="160dp"
+            android:layout_height="170dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/observacionesLP"
+            android:fadeScrollbars="false"
+            android:fillViewport="false">
+
+            <!-- Contendra una lista de CheckBox que se rellenan de forma dinamica, con los datos de las observaciones de la BD -->
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/listaCheckBoxObservacionesLP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </ScrollView>
+
+        <Button
+            android:id="@+id/botonIncluirObservacionesLP"
+            android:layout_width="110dp"
+            android:layout_height="60dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/observacionesLP"
+            android:text="@string/incluir_M"
+            android:textSize="@dimen/textSizeButtons" />
+
+        <Button
+            android:id="@+id/botonQuitarObservacionesLP"
+            android:layout_width="90dp"
+            android:layout_height="60dp"
+            android:layout_alignTop="@+id/botonIncluirObservacionesLP"
+            android:layout_toEndOf="@+id/botonIncluirObservacionesLP"
+            android:text="@string/valor_M"
+            android:textSize="@dimen/textSizeButtons"/>
+
+        <Button
+            android:id="@+id/botonDictarObservacionesLP"
+            android:layout_width="70dp"
+            android:layout_height="60dp"
+            android:layout_alignTop="@+id/botonQuitarObservacionesLP"
+            android:layout_toEndOf="@+id/botonQuitarObservacionesLP"
+            android:text="@string/dictar_M"
+            android:textSize="@dimen/textSizeButtons"/>
+
+        <CheckBox
+            android:id="@+id/checkFijarObservacionesLP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/observacionesLP"
+            android:layout_below="@+id/botonQuitarObservacionesLP"
+            android:text="@string/fijar_InTraza"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/clonarBotonDialogoNuevoLP"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="95dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/eliminarBotonDialogoNuevoLP"
+        android:layout_marginEnd="245dp"
+        android:background="@null"
+        android:drawableStart="@drawable/boton_clonar_pk"
+        android:text="@string/clonar_M"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/textSizeCircularButons"
+        android:typeface="normal" />
+
+    <Button
+        android:id="@+id/eliminarBotonDialogoNuevoLP"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="96dp"
+        android:layout_alignBottom="@+id/aceptarBotonDialogoNuevoLP"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="52dp"
+        android:background="@null"
+        android:drawableStart="@drawable/boton_borrar_pk"
+        android:text="@string/suprimir_M"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/textSizeCircularButons"
+        android:typeface="normal" />
+
+
+    <Button
+        android:id="@+id/aceptarBotonDialogoNuevoLP"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="44dp"
+        android:background="@null"
+        android:drawableStart="@drawable/boton_ok"
+        android:text="@string/aceptar_M"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/textSizeCircularButons"
+        android:typeface="normal" />
+
+    <Button
+        android:id="@+id/cancelarBotonDialogoNuevoLP"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/aceptarBotonDialogoNuevoLP"
+        android:layout_marginStart="230dp"
+        android:background="@null"
+        android:drawableStart="@drawable/boton_cancel"
+        android:text="@string/cancelar_M"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/textSizeCircularButons"
+        android:typeface="normal" />
+
+
+</RelativeLayout>

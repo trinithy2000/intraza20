@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/gradient">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/tituloDCEP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorFondoDatosLP">
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textoMensajeAvisoDCEP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:text="@string/enviar_InTraza"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/scrollMensajeAvisoDCEP"
+        android:layout_width="150dp"
+        android:layout_height="186dp"
+        android:layout_alignStart="@+id/textoMensajeAvisoDCEP"
+        android:layout_below="@+id/textoMensajeAvisoDCEP"
+        android:layout_marginTop="15dp"
+        android:layout_toStartOf="@+id/linearLayout2"
+        android:fadeScrollbars="false">
+
+        <TextView
+            android:id="@+id/textoScrollMensajeAvisoDCEP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/textoInfoDCEP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorFondoDatoArticuloLP"
+        android:gravity="center"
+        android:text="@string/confirmacion_M"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="29dp"
+        android:layout_marginTop="60dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/siBotonDCEP"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:drawableTop="@drawable/boton_ok"
+            android:text="@string/aceptar_M"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/textSizeCircularButons"
+            android:typeface="normal" />
+
+        <Button
+            android:id="@+id/noBotonDCEP"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@null"
+            android:drawableTop="@drawable/boton_cancel"
+            android:text="@string/cancelar_M"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/textSizeCircularButons"
+            android:typeface="normal" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo">
+
+    <Button
+        android:id="@+id/botonMainRutero"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/botonMainPedidos"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="276dp"
+        android:background="@null"
+        android:drawableStart="@drawable/boton_crear_pedido"
+        android:text="@string/crear"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        android:typeface="normal" />
+
+
+    <Button
+        android:id="@+id/botonMainPedidos"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/botonMainSincronizar"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="242dp"
+        android:background="@null"
+        android:drawableStart="@drawable/boton_gestion_pedido"
+        android:text="@string/gestion"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        android:typeface="normal" />
+
+    <Button
+        android:id="@+id/botonMainSincronizar"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/botonMainAcercaDe"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="115dp"
+        android:background="@null"
+        android:drawableStart="@drawable/boton_sincro"
+        android:text="@string/sincro"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        android:typeface="normal" />
+
+    <Button
+        android:id="@+id/botonMainAcercaDe"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="12dp"
+        android:layout_marginEnd="216dp"
+        android:background="@null"
+        android:drawableStart="@drawable/boton_acerca"
+        android:text="@string/acerca"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        android:typeface="normal" />
+
+    <Button
+        android:id="@+id/botonMainConfiguracion"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/boton_config" />
+
+</RelativeLayout>

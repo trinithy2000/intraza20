@@ -1,0 +1,49 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="intraza.com">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo_intraza"
+        android:label="@string/app_name">
+
+        <activity
+            android:name=".InTrazaActivity_"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Black">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".interfaz.pantallas.PantallaRutero_"
+            android:label="Rutero"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Black" />
+
+        <activity
+            android:name=".interfaz.pantallas.PantallaListaPedidos_"
+            android:label="Lista pedidos"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Black" />
+        <activity
+            android:name=".interfaz.dialogos.DialogoMensaje_"
+            android:label="Mensaje"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Dialog" />
+
+        <activity
+            android:name=".interfaz.pantallas.PantallaConfiguracion_"
+            android:label="Opciones de configuración"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Black" />
+    </application>
+
+</manifest>

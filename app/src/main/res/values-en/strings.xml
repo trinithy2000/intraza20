@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- *** PANTALLA PRINCIPAL *** -->
+
+    <string name="app_name">InTraza</string>
+
+    <!-- Cadenas para las columnas de la tabla rutero -->
+    <string name="colReferencia">REFERENCE</string>
+    <string name="colArticulo">ARTICLE</string>
+    <string name="colFechaAnterior">LAST. DATA</string>
+    <string name="colCantidadAnterior">QUANT./T.YEAR</string>
+    <string name="colTarifaAnterior">LAST. RATE</string>
+    <string name="colCantidadKg">QUANT. UD/KG</string>
+    <string name="colTarifa">RATE</string>
+    <string name="colTarifaLista">PRICE LIST</string>
+
+    <!-- Cadenas para las columnas de la tabla pedidos -->
+    <string name="colIdPedido">ORDER ID.</string>
+    <string name="colCliente">CUSTOMER</string>
+    <string name="colFechaPedido">DATE ORDER</string>
+    <string name="colFechaEntrega">DELIVERY DATE</string>
+    <string name="colPrecioTotal">TOTAL PRICE</string>
+    <string name="colPendienteEnviar">SEND</string>
+    <string name="colSuprimir">DELETE</string>
+
+    <!-- Cadenas para las columnas de la tabla configuracion -->
+    <string name="colDescripcionParametro">DESCRIPTION PARAMETER</string>
+    <string name="colValorParametro">PARAMETER VALUE</string>
+
+    <!-- Cadenas para definir medida del pedido -->
+    <string name="kilogramos">KG</string>
+    <string name="unidades">UN</string>
+
+    <!-- Cadenas para definir etiquetas con : -->
+    <string name="kilogramos_dot">Kg:</string>
+    <string name="unidades_dot">Ud:</string>
+    <string name="tarifa_cliente_dot">Customer rate:</string>
+    <string name="observaciones_dot">remarks:</string>
+    <string name="lista_observaciones_dot">List of comments:</string>
+    <string name="sugerencias_dot">suggestions:</string>
+    <string name="rellene_pedido_dot">Fill in the details for the order:</string>
+    <string name="sinc_wifi_dot">Sync:</string>
+    <string name="sinc_empresa">\u0020 In Viper</string>
+    <string name="sinc_fuera_empresa">\u0020 Outside Viper</string>
+    <string name="sinc_ruteros">\u0020 ruter</string>
+    <string name="sinc_resto">\u0020 other data</string>
+
+    <string name="sincronizando">Synchronizing data </string>
+    <string name="cliente_dot">Enter the customer whose order you want to consult:</string>
+
+    <!-- Cadenas para definir en Mayusculas -->
+    <string name="aceptar_M">OK</string>
+    <string name="continuar_M">CONTINUE</string>
+    <string name="cancelar_M">CANCEL</string>
+    <string name="suprimir_M">DELETE</string>
+    <string name="consultar_M">CONSULT</string>
+    <string name="clonar_M">CLONING ARTICLE</string>
+    <string name="incluir_M">INCLUDE SELECTIONS</string>
+    <string name="dictar_M">GIVE</string>
+    <string name="valor_M">DEFAULT VALUE</string>
+    <string name="conf_guardar_M">SAVE DATA WITHOUT CONFIRMATION</string>
+    <string name="confirmacion_M">SHIP ORDERS CONFIRMATION</string>
+    <string name="conf_borrar_M">CLEAR CONFIRMATION ORDERS</string>
+    <string name="enviar_M">SHIP ORDERS SELECTED</string>
+    <string name="borrar_M">DELETE SELECTED ORDERS</string>
+    <string name="descuento_M">SPECIAL DISCOUNT</string>
+    <string name="tel_obser_M">TLF/OBSERVATIONS</string>
+    <string name="ocultar_M">RUTER HIDE</string>
+    <string name="plunes_M">NEXT MONDAY</string>
+    <string name="datos_M">DATA FOR CONSULTATION OF ORDERS</string>
+    <string name="guardar_c_M">SAVE CHANGES</string>
+    <string name="tlf_M">TLF</string>
+    <string name="nueva_con_M">NEW QUERY</string>
+    <string name="conf_sincro_M">TIMING CONFIRMATION</string>
+    <string name="sincro_M">RUTERS SINCRO</string>
+
+    <!-- Cadenas para definir varios -->
+    <string name="cliente">Customer</string>
+    <string name="referencia">Reference</string>
+    <string name="articulo">Article</string>
+    <string name="menosUno">-1</string>
+    <string name="menosCero">-0</string>
+    <string name="cero">0</string>
+
+    <string name="gestion">Order Management</string>
+    <string name="crear">Create Orders</string>
+    <string name="fijar">Fix</string>
+    <string name="fijar_InTraza">Set observations InTraza</string>
+    <string name="fijar_a_InTraza">Set items InTraza</string>
+    <string name="introduzca_dat">Enter the details of the new article</string>
+    <string name="conf_eliminar">Do you want to remove the following orders?</string>
+    <string name="enviar_InTraza">Do you want to send InTraza the following orders?</string>
+    <string name="conf_guardar">No data on current orders that have not been saved.\n Do you want to save?</string>
+    <string name="fecha_entrega">Delivery date</string>
+    <string name="suprimir">Remove</string>
+    <string name="dots"> … </string>
+
+    <!--  Mensajes de aviso que se muestran con Toast -->
+    <string name="avisoFaltaCantidadNuevoPedido">You must enter the order quantity</string>
+    <string name="avisoFaltaPrecioNuevoPedido">You must enter the order price</string>
+
+    <!--  Prompt para los spinner -->
+    <string name="promptSpinnerCliente">Select a customer</string>
+    <string name="promptSpinnerArticulo">Select an item</string>
+    <string name="pedidoDia">"Order of the Day"</string>
+    <string name="totalAnyo">Year total: </string>
+    <string name="ultimaCantidad">Last number: </string>
+    <string name="ultimaTarifa">Last rate: </string>
+    <string name="tarifaLista">Rate list:</string>
+    <string name="articulos">articles:</string>
+    <string name="errores">errors:</string>
+
+    <!--  operadores -->
+    <string name="Si">YES</string>
+    <string name="No">NO</string>
+    <string name="on">ON</string>
+    <string name="off">OFF</string>
+    <string name="plus">+</string>
+    <string name="Hoy">TODAY</string>
+
+
+    <!-- info progress bar -->
+    <string name="pg_clientes">Customers</string>
+    <string name="pg_observaciones">Remarks</string>
+    <string name="pg_articulos">Articles</string>
+    <string name="pg_ruteros_R">Ruters Reading</string>
+    <string name="pg_ruteros_W">Ruters Writting</string>
+    <string name="pg_tarifas_R">\u0020 Fee Schedule Reading</string>
+    <string name="pg_pesosUnidades_R">\u0020 List of weight / units Reading</string>
+    <string name="pg_ruteros_RW">\u0020 Ruteros Lectura/Escritura</string>
+
+    <!--  info programa -->
+
+
+    <string name="desarrollo">developed by TrinthySoft:</string>
+    <string name="atencion">Customer service:</string>
+    <string name="acerca">About </string>
+    <string name="sincro">Synchronize with InTraza</string>
+    <string name="chooseEmail">Choose a program to send mail:</string>
+    <string name="config">Settings</string>
+    <string name="guardar">Save</string>
+
+    <string name="CADENA_PREFIJO_PRECIO_TOTAL">Cost: </string>
+    <string name="lblPassword">Pick your password: </string>
+
+    <!--  config info programa -->
+    <string name="DESCRIPCION_PARAMETRO_ULTIMA_FECHA_SINCRONIZACION">Date of the last synchronization with InTraza</string>
+    <string name="DESCRIPCION_PARAMETRO_TIMEOUT_WEB_SERVICE_SINCRONIZACION">Timeout in seconds for the connection to the Web Service of synchronization and sending orders to InTraza</string>
+    <string name="DESCRIPCION_PARAMETRO_PERMITIR_PRECIO_0">You can take the values YES or NO indicates whether this allowed creating order lines with cost 0</string>
+    <string name="DESCRIPCION_PARAMETRO_NUM_DIAS_ANTIGUEDAD_MARCA_TARIFA_DEFECTO">Indicates the number of days, to be considered that a fee is recent.
+         According to the value of this parameter, a mark will be put in the general rate in the rutero to inform the commercial</string>
+    <string name="DESCRIPCION_PARAMETRO_USUARIO_WS">User for SSL validation of WS REST</string>
+    <string name="DESCRIPCION_PARAMETRO_PERMITIR_SINCRONIZAR_CON_PEDIDOS_PENDIENTES">It indicates whether the sintronizacion with InTraza is allowed when sending backorders.</string>
+    <string name="DESCRIPCION_PARAMETRO_CODIGO_STATUS_LINEA_RUTERO_OCULTA">Indicates the status of rutero code for hidden lines rutero.</string>
+    <string name="DESCRIPCION_PARAMETRO_INTERVALOS_A_DIVIDIR_RUTERO">Indica al programa los intervalos en los que se va a dividir el rutero durante la sincronizacion. ej: 1200 — [0,1200],[1201,2400]…</string>
+    <string name="DESCRIPCION_PARAMETRO_PASSWORD_WS">Password para la validacion SSL de los WS REST</string>
+
+    <!--  Para los spinner -->
+    <string name="SPINNER_NINGUNO">&lt;nothing&gt;</string>
+    <string name="SPINNER_TODO">ALL</string>
+
+    <string name="INFO_SIN_FECHA_ANTERIOR_LINEA_PEDIDO">No details of previous orders.</string>
+    <string name="MENSAJE_OBSERVACIONES_NUEVO_PEDIDO_ACEPTADOS">¡Observations order accepted!</string>
+
+    <!--  Mensajes a mostar con Toast -->
+    <string name="MENSAJE_SINCRO_UNO">La última sincronización se realizó el </string>
+    <string name="MENSAJE_SINCRO_DOS">Se va a proceder a la sincronización de datos con InTraza.\n¿Desea continuar?</string>
+
+    <string name="MENSAJE_TITULO_DIALOGO_NUEVO_PEDIDO">Enter the details of the new order</string>
+    <string name="MENSAJE_TITULO_DIALOGO_MODIFICA_PEDIDO">Enter order data</string>
+    <string name="MENSAJE_DATOS_NUEVO_LP_ACEPTADOS">¡Ordering data accepted!</string>
+    <string name="MENSAJE_DATOS_NUEVO_LP_ELIMINADOS">¡Removed data Order!</string>
+    <string name="MENSAJE_DATOS_NUEVO_LP_CLONAR_ACEPTADOS">¡Data cloned article accepted for order!</string>
+    <string name="MENSAJE_DATOS_INCLUIR_SELECCIONES">¡Teams included in the observations!</string>
+    <string name="MENSAJE_DATOS_QUITAR_SELECCIONES">¡Observations have been default!</string>
+    <string name="AVISO_DATOS_NUEVO_LP_CANTIDAD_0">¡TO ENTER AN AMOUNT!</string>
+    <string name="AVISO_DATOS_NUEVO_LP_TARIFA_CLIENTE_0">¡THE CUSTOMER CAN NOT RATE 0!</string>
+    <string name="AVISO_DATOS_DCNP_CLIENTE_NO_VALIDO">¡CUSTOMER STATED NOT VALID!</string>
+    <string name="AVISO_DATOS_DCNP_FECHA_NO_VALIDA">¡THE DEADLINE IS NOT VALID, MUST OCCUR AFTER THE CURRENT DATE!</string>
+    <string name="MENSAJE_DATOS_PEDIDO_GUARDADOS">¡Order data saved correctly!</string>
+    <string name="ERROR_GUARDAR_DATOS_PEDIDO">ERROR: When saving order data.</string>
+    <string name="ERROR_BORRAR_DATOS_PEDIDO">ERROR: To delete the order data.</string>
+    <string name="MENSAJE_PEDIDO_SIN_LINEAS_PEDIDO">¡No online ordering!</string>
+    <string name="AVISO_DATOS_DNAR_ARTICULO_NO_VALIDO">¡ARTICLE STATED NOT VALID!</string>
+    <string name="AVISO_DATOS_DCP_CLIENTE_NO_VALIDO">¡CUSTOMER STATED NOT VALID!</string>
+    <string name="AVISO_DATOS_DCP_ID_PEDIDO_NO_VALIDO">¡IDENTIFIER ORDER IS NOT VALID!</string>
+    <string name="AVISO_DATOS_DCP_SOLO_UN_DATO">¡ONLY ONE MUST COMPLETE THE REQUESTED DATA!</string>
+    <string name="AVISO_DATOS_DCP_NINGUN_DATO">¡ONLY ONE MUST COMPLETE THE REQUESTED DATA!</string>
+    <string name="MENSAJE_PANTALLA_PEDIDOS_BORRADOS">¡Orders have been deleted!</string>
+    <string name="MENSAJE_PANTALLA_PEDIDOS_ENVIADOS">¡Orders sent to InTraza!</string>
+    <string name="MENSAJE_PANTALLA_NINGUN_PEDIDO_SELECCIONADO">¡No selected request!</string>
+    <string name="MENSAJE_PARAMETROS_PC_GUARDADOS">¡Saved configuration parameters!</string>
+
+    <!-- Mensajes para el subdialogo mensaje -->
+
+    <string name="TITULO_SIN_PEDIDOS_CONSULTA">ORDERS WITHOUT CONSULTATION</string>
+    <string name="INFORMACION_SIN_PEDIDOS_CONSULTA">It has not received any request in the query.</string>
+
+    <string name="TITULO_SIN_ARTICULOS_NUEVOS">NO NEW ITEMS</string>
+    <string name="INFORMACION_SIN_ARTICULOS_NUEVOS">All articles, already in the client ruter.</string>
+
+    <string name="TITULO_INFO_TELEFONO">TELEPHONE CUSTOMER</string>
+    <string name="INFORMACION_INFO_TELEFONO"> </string>
+
+    <!-- Mensajes para AlertDialog en sincronizacion correcta -->
+    <string name="TITULO_ALERT_SINCRONIZACION_CORRECTA">SINCRONIZACIÓN DE DATOS INTRAZA CORRECTA</string>
+    <string name="MENSAJE_ALERT_SINCRONIZACION_CORRECTA">The data are synchronized with the tablet InTraza.</string>
+
+    <!-- Mensajes para AlertDialog en error al sincronizar -->
+
+    <string name="TITULO_ALERT_ERROR_SINCRONIZAR">SINCRONIZACIÓN DE DATOS INTRAZA INCORRECTA</string>
+    <string name="MENSAJE_ALERT_ERROR_SINCRONIZAR">There was an error while synchronizing.\n\nPlease check the connection with InTraza and try again and if the error persists contact the administrator.</string>
+    <!-- Mensajes para AlertDialog en envio prepedidos correcto -->
+
+    <string name="TITULO_ALERT_ENVIO_PREPEDIDOS_CORRECTO">SENDING ORDERS TO INTRAZA CORRECT</string>
+    <string name="MENSAJE_ALERT_ENVIO_PREPEDIDOS_CORRECTO">The selected orders have been sent to InTraza.</string>
+
+    <!--  Mensajes para AlertDialog en error al enviar prepedidos -->
+    <string name="TITULO_ALERT_ERROR_ENVIO_PREPEDIDOS">SENDING ORDERS TO INTRAZA WRONG</string>
+    <string name="MENSAJE_ALERT_ERROR_ENVIO_PREPEDIDOS">There was an error sending all or some of the selected order.\n\nPlease check the connection with InTraza and try again and if the error persists contact the administrator.</string>
+
+    <!-- Mensajes para AlertDialog al no permitir sincronizacion por tener pedidos pendientes de enviar -->
+    <string name="TITULO_ALERT_ERROR_NO_SINCRONIZAR_PEDIDOS_PENDIENTES">SYNC WITH FORBIDDEN INTRAZA</string>
+    <string name="MENSAJE_ALERT_ERROR_NO_SINCRONIZAR_PEDIDOS_PENDIENTES">There backlog of sending InTraza.\nYou to send or delete synchronization.</string>
+    <string name="no_data">No hay datos de pedidos anteriores.</string>
+    <string name="ultima_cantidad">Ultima cantidad:-1/Total año:0</string>
+    <string name="tlf">Tlf :</string>
+    <string name="blanco"> </string>
+
+</resources>

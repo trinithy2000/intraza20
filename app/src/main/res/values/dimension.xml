@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- *** PANTALLA PRINCIPAL *** -->
+
+    <!-- Anchos de las columnas de la tabla rutero -->
+    <dimen name="widthColReferencia">110dp</dimen>
+    <dimen name="widthColArticulo">180dp</dimen>
+    <dimen name="widthColBoton">40dp</dimen>
+    <dimen name="widthColFechaAnterior">150dp</dimen>
+    <dimen name="widthColCantidadAnterior">160dp</dimen>
+    <dimen name="widthColTarifaAnterior">150dp</dimen>
+    <dimen name="widthColCantidadKg">120dp</dimen>
+    <dimen name="widthColTarifa">120dp</dimen>
+    <dimen name="widthColTarifaLista">120dp</dimen>
+
+
+    <!-- Anchos de las columnas de la tabla pedidos -->
+    <dimen name="widthColIdPedido">150dp</dimen>
+    <dimen name="widthColCliente">330dp</dimen>
+    <dimen name="widthColFechaPedido">190dp</dimen>
+    <dimen name="widthColFechaEntrega">190dp</dimen>
+    <dimen name="widthColPrecioTotal">180dp</dimen>
+    <dimen name="widthColPendienteEnviar">120dp</dimen>
+    <dimen name="widthColSuprimir">120dp</dimen>
+
+    <!-- Anchos de las columnas de la tabla de configuracion -->
+    <dimen name="widthColDescripcionParametro">900px</dimen>
+    <dimen name="widthColValorParametro">380px</dimen>
+
+    <dimen name="heightCabeceraTablaConfiguracion">90px</dimen>
+    <dimen name="heightFilaDatosTablaConfiguracion">100dp</dimen>
+    <dimen name="textSizeFilaDatosTablaConfiguracion">9sp</dimen>
+
+    <!-- Alto de las filas de la tabla -->
+    <dimen name="heightCabeceraTabla">60dp</dimen>
+    <dimen name="heightFilaDatosTabla">50px</dimen>
+
+    <dimen name="textSizePedido">16sp</dimen>
+    <dimen name="textSizeCabeceraTabla">20px</dimen>
+    <dimen name="textSizeCabeceraTablaP">22px</dimen>
+    <dimen name="textSizeFilaDatosTabla">13px</dimen>
+    <dimen name="textSizeColumnas">18px</dimen>
+    <dimen name="textSizeCircularButons">16sp</dimen>
+
+    <dimen name="textSizeButtons">12sp</dimen>
+
+    <dimen name="heightObservacionesPedidoCliente">60px</dimen>
+    <dimen name="textSizeObservacionesPedidoCliente">18px</dimen>
+    <dimen name="anchoFilaPedido">75dp</dimen>
+
+    <!-- *** USADOS EN LOS DIALOGOS *** -->
+
+    <integer name="longitudCantidadLP">7</integer>
+    <integer name="longitudPrecioLP">9</integer>
+    <integer name="longitudObservacionesNuevoLP">600</integer>
+    <bool name="devMode">true</bool>;
+</resources>

@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- *** PANTALLA PRINCIPAL *** -->
+
+    <string name="app_name">InTraza</string>
+
+    <!-- Cadenas para las columnas de la tabla rutero -->
+    <string name="colReferencia">REFERÈNCIA</string>
+    <string name="colArticulo">ARTICLE</string>
+    <string name="colFechaAnterior">ULT. DATA</string>
+    <string name="colCantidadAnterior">QUANT./T.ANY</string>
+    <string name="colTarifaAnterior">ULT. TARIFA</string>
+    <string name="colCantidadKg">QUANT. UN/KG</string>
+    <string name="colTarifa">TARIFA</string>
+    <string name="colTarifaLista">TARIFA LLISTA</string>
+
+    <!-- Cadenas para las columnas de la tabla pedidos -->
+    <string name="colIdPedido">ID. COMANDA</string>
+    <string name="colCliente">CLIENT</string>
+    <string name="colFechaPedido">DATA COMANDA</string>
+    <string name="colFechaEntrega">DATA LLIURAMENT</string>
+    <string name="colPrecioTotal">PREU TOTAL</string>
+    <string name="colPendienteEnviar">ENVIAR</string>
+    <string name="colSuprimir">ESBORRAR</string>
+
+    <!-- Cadenas para las columnas de la tabla configuracion -->
+    <string name="colDescripcionParametro">DESCRIPCIÓ PARÀMETRE</string>
+    <string name="colValorParametro">VALOR PARÀMETRE</string>
+
+    <!-- Cadenas para definir medida del pedido -->
+    <string name="kilogramos">KG</string>
+    <string name="unidades">UN</string>
+
+    <!-- Cadenas para definir etiquetas con : -->
+    <string name="kilogramos_dot">Kg:</string>
+    <string name="unidades_dot">Un:</string>
+    <string name="tarifa_cliente_dot">Tarifa client:</string>
+    <string name="observaciones_dot">Observacions:</string>
+    <string name="sugerencias_dot">Suggeriments:</string>
+    <string name="lista_observaciones_dot">Llista d\'observacions:</string>
+    <string name="rellene_pedido_dot">Ompli les dades per a la comanda:</string>
+    <string name="sinc_wifi_dot">Sincronitzar:</string>
+    <string name="sinc_empresa">\u0020 En Viper</string>
+    <string name="sinc_fuera_empresa">\u0020 Fora de Viper</string>
+    <string name="sinc_ruteros">\u0020 ruteros</string>
+    <string name="sinc_resto">\u0020 resta de dades</string>
+
+    <string name="sincronizando">Sincronitzant dades de </string>
+    <string name="cliente_dot">Introduiu el client, els comandes desitja consultar:</string>
+
+    <!-- Cadenas para definir en Mayusculas -->
+    <string name="aceptar_M">ACCEPTAR</string>
+    <string name="continuar_M">CONTINUAR</string>
+    <string name="cancelar_M">CANCEL·LAR</string>
+    <string name="suprimir_M">SUPRIMIR</string>
+    <string name="consultar_M">CONSULTAR</string>
+    <string name="clonar_M">CLONAR ARTICLE</string>
+    <string name="incluir_M">INCLOURE SELECCIONS</string>
+    <string name="dictar_M">DICTAR</string>
+    <string name="valor_M">VALOR PER DEFECTE</string>
+    <string name="conf_guardar_M">CONFIRMACIÓ DADES SENSE GUARDAR</string>
+    <string name="confirmacion_M">CONFIRMACIÓ ENVIAR COMANDES</string>
+    <string name="conf_borrar_M">CONFIRMACIÓ ESBORRAR COMANDES</string>
+    <string name="enviar_M">ENVIAR COMANDES SELECCIONATS</string>
+    <string name="borrar_M">ESBORRAR COMANDES SELECCIONATS</string>
+    <string name="descuento_M">DESCOMPTE ESPECIAL</string>
+    <string name="tel_obser_M">TLF/OBSERVACIONS</string>
+    <string name="ocultar_M">AMAGAR RUTER</string>
+    <string name="plunes_M">PRÒXIM DILLUNS</string>
+    <string name="datos_M">DADES PER A LA CONSULTA DE COMANDES</string>
+    <string name="guardar_c_M">GUARDAR CANVIS</string>
+    <string name="tlf_M">TLF</string>
+    <string name="nueva_con_M">NOVA CONSULTA</string>
+    <string name="conf_sincro_M">CONFIRMACIÓ SINCRONITZACIÓ</string>
+    <string name="sincro_M">SINCRONITZACIÓ RUTERS</string>
+
+    <!-- Cadenas para definir varios -->
+    <string name="cliente">Client</string>
+    <string name="referencia">Referència</string>
+    <string name="articulo">Article</string>
+    <string name="menosUno">-1</string>
+    <string name="cero">0</string>
+    <string name="menosCero">-0</string>
+    <string name="gestion">Gestió de pomandes</string>
+    <string name="crear">Crear comandes</string>
+    <string name="fijar">Fixar</string>
+    <string name="fijar_InTraza">Fixar observacions en InTraza</string>
+    <string name="fijar_a_InTraza">Fixar article en InTraza</string>
+    <string name="introduzca_dat">Introdueixi les dades del nou article</string>
+    <string name="conf_eliminar">Voleu eliminar els seguents comandes?</string>
+    <string name="enviar_InTraza">Voleu enviar a InTraza les seguents comandes?</string>
+    <string name="conf_guardar">Hi ha dades a la comanda actual que no han estat guardats.\nVoleu desar?</string>
+    <string name="fecha_entrega">Data de lliurament</string>
+    <string name="suprimir">Suprimir</string>
+    <string name="dots"> … </string>
+
+    <!--  Mensajes de aviso que se muestran con Toast -->
+    <string name="avisoFaltaCantidadNuevoPedido">Ha d\'introduir la quantitat de la comanda</string>
+    <string name="avisoFaltaPrecioNuevoPedido">Ha d\'introduir el preu de la comanda</string>
+
+    <!--  Prompt para los spinner -->
+    <string name="promptSpinnerCliente">Seleccioneu un client</string>
+    <string name="promptSpinnerArticulo">Seleccioneu un article</string>
+    <string name="pedidoDia">"Comanda del dia "</string>
+    <string name="totalAnyo">Total any: </string>
+    <string name="ultimaCantidad">Ultima quantitat: </string>
+    <string name="ultimaTarifa">Ultima tarifa: </string>
+    <string name="tarifaLista">Tarifa llista:</string>
+    <string name="articulos">articles:</string>
+    <string name="errores">errors:</string>
+
+    <!--  operadores -->
+    <string name="Si">SI</string>
+    <string name="No">NO</string>
+    <string name="on">ON</string>
+    <string name="off">OFF</string>
+    <string name="plus">+</string>
+    <string name="Hoy">AVUI</string>
+
+    <!-- info progress bar -->
+    <string name="pg_clientes">Clients</string>
+    <string name="pg_observaciones">Observacions</string>
+    <string name="pg_articulos">Articles</string>
+    <string name="pg_ruteros_R">Ruters Lectura</string>
+    <string name="pg_ruteros_W">Ruters escriptura</string>
+    <string name="pg_tarifas_R">\u0020 Llista de Tarifes Lectura</string>
+    <string name="pg_pesosUnidades_R">\u0020 Llista de pesos / unitats Lectura</string>
+    <string name="pg_ruteros_RW">\u0020 Ruteros Lectura/Escritura</string>
+
+
+    <!--  info programa -->
+
+    <string name="desarrollo">desenvolupat per TrinthySoft:</string>
+    <string name="atencion">Atenció al client:</string>
+    <string name="acerca">Quant a </string>
+    <string name="sincro">Sincronitzar amb InTraza</string>
+    <string name="config">configuració</string>
+    <string name="guardar">Guardar</string>
+    <string name="chooseEmail">Elige un programa para enviar el correo:</string>
+
+    <string name="CADENA_PREFIJO_PRECIO_TOTAL">Preu: </string>
+    <string name="lblPassword">Introdueix la contrasenya :</string>
+
+    <!--  config info programa -->
+    <string name="DESCRIPCION_PARAMETRO_ULTIMA_FECHA_SINCRONIZACION">Data de l\'última sincronització amb InTraza</string>
+    <string name="DESCRIPCION_PARAMETRO_TIMEOUT_WEB_SERVICE_SINCRONIZACION">Timeout en segons, per a la conexion amb els Web Service de sincronització i enviament de comandes a InTraza</string>
+    <string name="DESCRIPCION_PARAMETRO_PERMITIR_PRECIO_0">Pot prendre els valors SI o NO, indica si està permès crear línies de comanda amb preu 0</string>
+    <string name="DESCRIPCION_PARAMETRO_NUM_DIAS_ANTIGUEDAD_MARCA_TARIFA_DEFECTO">Indica el nombre de dies, perquè es consideri que una tarifa és recent.
+         Segons el valor d\'aquest paràmetre, es posarà una marca en la tarifa general en el ruter, per informar al comercial</string>
+    <string name="DESCRIPCION_PARAMETRO_USUARIO_WS">Usuari per a la validacion SSL dels WS REST</string>
+    <string name="DESCRIPCION_PARAMETRO_PERMITIR_SINCRONIZAR_CON_PEDIDOS_PENDIENTES">Indica si es permet la sintronizacion amb InTraza, quan hi ha comandes pendents d\'enviar.</string>
+    <string name="DESCRIPCION_PARAMETRO_CODIGO_STATUS_LINEA_RUTERO_OCULTA">Indica el codi d\'estatus de ruter, per a les línies de ruter ocultes.</string>
+    <string name="DESCRIPCION_PARAMETRO_INTERVALOS_A_DIVIDIR_RUTERO">Indica al programa els intervals en què es va a dividir el ruter durant la sincronització. ej: 1200 — [0,1200],[1201,2400]…</string>
+    <string name="DESCRIPCION_PARAMETRO_PASSWORD_WS">Password para la validacion SSL de los WS REST</string>
+
+    <!--  Para los spinner -->
+    <string name="SPINNER_NINGUNO">&lt;cap&gt;</string>
+    <string name="SPINNER_TODO">TOTS</string>
+
+    <string name="INFO_SIN_FECHA_ANTERIOR_LINEA_PEDIDO">No hi ha dades de comandes anteriors.</string>
+    <string name="MENSAJE_OBSERVACIONES_NUEVO_PEDIDO_ACEPTADOS">¡Observacions demanat acceptades!</string>
+
+    <!--  Mensajes a mostar con Toast -->
+
+    <string name="MENSAJE_SINCRO_UNO">L\'última sincronització es va realitzar el </string>
+    <string name="MENSAJE_SINCRO_DOS">Es va a procedir a la sincronització de dades amb InTraza.\n¿Voleu continuar?</string>
+
+    <string name="MENSAJE_TITULO_DIALOGO_NUEVO_PEDIDO">Introdueixi les dades de la nova comanda</string>
+    <string name="MENSAJE_TITULO_DIALOGO_MODIFICA_PEDIDO">Introdueixi les dades de la comanda</string>
+    <string name="MENSAJE_DATOS_NUEVO_LP_ACEPTADOS">¡Dades acceptats per la comanda!</string>
+    <string name="MENSAJE_DATOS_NUEVO_LP_ELIMINADOS">¡Dades eliminats de la comanda!</string>
+    <string name="MENSAJE_DATOS_NUEVO_LP_CLONAR_ACEPTADOS">¡Dades article clonat acceptats per la comanda!</string>
+    <string name="MENSAJE_DATOS_INCLUIR_SELECCIONES">¡Seleccions incloses en les observacions!</string>
+    <string name="MENSAJE_DATOS_QUITAR_SELECCIONES">¡S\'han posat les observacions per defecte!</string>
+    <string name="AVISO_DATOS_NUEVO_LP_CANTIDAD_0">¡HA INTRODUIR UNA QUANTITAT!</string>
+    <string name="AVISO_DATOS_NUEVO_LP_TARIFA_CLIENTE_0">¡LA TARIFA CLIENT NO POT SER 0!</string>
+    <string name="AVISO_DATOS_DCNP_CLIENTE_NO_VALIDO">¡EL CLIENT INDICAT NO ÉS VÀLID!</string>
+    <string name="AVISO_DATOS_DCNP_FECHA_NO_VALIDA">¡LA DATA DE LLIURAMENT NO ÉS VÀLIDA, HA DE SER POSTERIOR A LA DATA ACTUAL!</string>
+    <string name="MENSAJE_DATOS_PEDIDO_GUARDADOS">¡Dades de la comanda guardats correctament!</string>
+    <string name="ERROR_GUARDAR_DATOS_PEDIDO">ERROR: En guardar les dades de la comanda.</string>
+    <string name="ERROR_BORRAR_DATOS_PEDIDO">ERROR: A l\'esborrar les dades de la comanda.</string>
+    <string name="MENSAJE_PEDIDO_SIN_LINEAS_PEDIDO">¡No hi ha cap línia de comanda!</string>
+    <string name="AVISO_DATOS_DNAR_ARTICULO_NO_VALIDO">¡L\'ARTICULO INDICAT NO ÉS VÀLID!</string>
+    <string name="AVISO_DATOS_DCP_CLIENTE_NO_VALIDO">¡EL CLIENT INDICAT NO ÉS VÀLID!</string>
+    <string name="AVISO_DATOS_DCP_ID_PEDIDO_NO_VALIDO">¡EL IDENTIFICADOR DE LA COMANDA NO ÉS VÀLID!</string>
+    <string name="AVISO_DATOS_DCP_SOLO_UN_DATO">¡HA OMPLIR NOMÉS UN DE LES DATES SOLICITADES!</string>
+    <string name="AVISO_DATOS_DCP_NINGUN_DATO">¡HA OMPLIR NOMÉS UN DE LES DATES SOLICITADES!</string>
+    <string name="MENSAJE_PANTALLA_PEDIDOS_BORRADOS">¡S\'han esborrat les comandes!</string>
+    <string name="MENSAJE_PANTALLA_PEDIDOS_ENVIADOS">¡Comandes enviades a InTraza!</string>
+    <string name="MENSAJE_PANTALLA_NINGUN_PEDIDO_SELECCIONADO">¡Cap demanat seleccionat!</string>
+    <string name="MENSAJE_PARAMETROS_PC_GUARDADOS">¡Paràmetres de configuració guardats!</string>
+
+    <!-- Mensajes para el subdialogo mensaje -->
+
+    <string name="TITULO_SIN_PEDIDOS_CONSULTA">CONSULTA SENSE COMANDES</string>
+    <string name="INFORMACION_SIN_PEDIDOS_CONSULTA">No s\'ha obtingut cap comanda a la consulta.</string>
+    <string name="TITULO_SIN_ARTICULOS_NUEVOS">SENSE ARTICLES NOUS</string>
+    <string name="INFORMACION_SIN_ARTICULOS_NUEVOS">Tots els articles existents, ja es troben al ruter del client.</string>
+    <string name="TITULO_INFO_TELEFONO">TELÈFON CLIENT</string>
+    <string name="INFORMACION_INFO_TELEFONO"> </string>
+
+    <!-- Mensajes para AlertDialog en sincronizacion correcta -->
+    <string name="TITULO_ALERT_SINCRONIZACION_CORRECTA">SINCRONITZACIÓ DE DADES INTRAZA CORRECTA</string>
+    <string name="MENSAJE_ALERT_SINCRONIZACION_CORRECTA">Les dades de la tablet estan sincronitzats amb InTraza.</string>
+
+    <!-- Mensajes para AlertDialog en error al sincronizar -->
+
+    <string name="TITULO_ALERT_ERROR_SINCRONIZAR">SINCRONITZACIÓ DE DADES INTRAZA INCORRECTA</string>
+    <string name="MENSAJE_ALERT_ERROR_SINCRONIZAR">S\'ha produït un error en fer la sincronització.\n\n Si us plau, comproveu la connexió amb InTraza i intenteu de nou i si l\'error persisteix contacti amb l\'administrador.</string>
+
+    <!-- Mensajes para AlertDialog en envio prepedidos correcto -->
+
+    <string name="TITULO_ALERT_ENVIO_PREPEDIDOS_CORRECTO">ENVIAMENT DE COMANDES A INTRAZA CORRECTE</string>
+    <string name="MENSAJE_ALERT_ENVIO_PREPEDIDOS_CORRECTO">Les comandes seleccionats han estat enviats a InTraza.</string>
+
+    <!--  Mensajes para AlertDialog en error al enviar prepedidos -->
+    <string name="TITULO_ALERT_ERROR_ENVIO_PREPEDIDOS">ENVIAMENT DE COMANDES A INTRAZA INCORRECTE</string>
+    <string name="MENSAJE_ALERT_ERROR_ENVIO_PREPEDIDOS">S\'ha produït un error en enviar tots o algun dels comandes seleccionats.\n\nSi us plau, comproveu la connexió amb InTraza i intenteu de nou i si l\'error persisteix contacti amb l\'administrador.</string>
+
+    <!-- Mensajes para AlertDialog al no permitir sincronizacion por tener pedidos pendientes de enviar -->
+    <string name="TITULO_ALERT_ERROR_NO_SINCRONIZAR_PEDIDOS_PENDIENTES">SINCRONITZACIÓ AMB INTRAZA NO PERMESA</string>
+    <string name="MENSAJE_ALERT_ERROR_NO_SINCRONIZAR_PEDIDOS_PENDIENTES">Existeixen comandes pendents d\'enviar a InTraza.\nHa de d\'enviarlos o esborrar per poder realitzar la sincronització.</string>
+    <string name="no_data">No hay datos de pedidos anteriores.</string>
+    <string name="ultima_cantidad">Ultima cantidad:-1/Total año:0</string>
+    <string name="tlf">Tlf :</string>
+    <string name="blanco"> </string>
+
+</resources>

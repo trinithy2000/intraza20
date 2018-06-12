@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/gradient">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/DNAR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorFondoDatosLP">
+
+        <TextView
+            android:id="@+id/textoInfoDNAR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorFondoDatoArticuloLP"
+            android:gravity="center"
+            android:text="@string/introduzca_dat"
+            android:textColor="@android:color/white"
+            android:textSize="30sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textoReferenciaDNAR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/referencia"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:layout_below="@+id/DNAR"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="35dp" />
+
+    <AutoCompleteTextView
+        android:hint="@string/blanco"
+        android:id="@+id/ReferenciaDNAR"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:labelFor="@+id/ReferenciaDNAR"
+        android:maxLines="1"
+        android:inputType="numberSigned"
+        android:selectAllOnFocus="true"
+        android:layout_marginStart="10dp"
+        android:layout_below="@+id/DNAR"
+        android:layout_toEndOf="@+id/textoReferenciaDNAR"
+        android:layout_marginTop="30dp" />
+
+    <TextView
+        android:id="@+id/textoArticuloDNAR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/articulo"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:layout_below="@+id/DNAR"
+        android:layout_alignStart="@+id/textoReferenciaDNAR"
+        android:layout_marginTop="95dp"
+        android:maxLines="1" />
+
+    <AutoCompleteTextView
+        android:hint="@string/blanco"
+        android:id="@+id/articuloDNAR"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:labelFor="@+id/articuloDNAR"
+        android:selectAllOnFocus="true"
+        android:layout_marginStart="0dp"
+        android:layout_below="@+id/DNAR"
+        android:layout_alignStart="@+id/ReferenciaDNAR"
+        android:layout_marginTop="90dp"
+        android:maxLines="1">
+
+        <requestFocus />
+
+    </AutoCompleteTextView>
+
+    <Button
+        android:id="@+id/botonAbreSpinnerDNAR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/articuloDNAR"
+        android:layout_toEndOf="@+id/articuloDNAR"
+        android:text="@string/dots"
+        android:textSize="20sp" />
+
+    <Spinner
+        android:id="@+id/spinnerInvisibleClienteDNAR"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:prompt="@string/promptSpinnerArticulo"
+        android:textSize="20sp"
+        android:visibility="invisible" />
+
+    <CheckBox
+        android:id="@+id/checkFijarArticuloDNAR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fijar_a_InTraza"
+        android:textSize="20sp"
+        android:layout_below="@+id/DNAR"
+        android:layout_alignStart="@+id/textoReferenciaDNAR"
+        android:layout_marginTop="130dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="21dp"
+        android:layout_below="@+id/checkFijarArticuloDNAR"
+        android:layout_alignParentStart="true">
+
+        <Button
+            android:id="@+id/cancelarBotonDialogoDNAR"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:background="@null"
+            android:drawableTop="@drawable/boton_cancel"
+            android:text="@string/cancelar_M"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/textSizeCircularButons"
+            android:typeface="normal" />
+
+        <Button
+            android:id="@+id/aceptarBotonDialogoDNAR"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:background="@null"
+            android:drawableTop="@drawable/boton_ok"
+            android:text="@string/aceptar_M"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/textSizeCircularButons"
+            android:typeface="normal" />
+
+    </LinearLayout>
+</RelativeLayout>

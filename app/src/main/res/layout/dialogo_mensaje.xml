@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="600dp"
+    android:layout_height="300dp"
+    android:background="@drawable/gradient">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/DM"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorFondoDatosLP">
+
+        <TextView
+            android:id="@+id/tituloDM"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorFondoDatoArticuloLP"
+            android:gravity="center"
+            android:text="@string/conf_guardar_M"
+            android:textColor="@android:color/white"
+            android:textSize="30sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tlf"
+        android:layout_marginTop="60dp"
+        android:layout_marginStart="65dp"
+        android:textColor="@android:color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/informacionDM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/prueba"
+            android:layout_marginTop="60dp"
+            android:layout_marginStart="110dp"
+            android:textColor="@android:color/white"
+            android:textSize="25sp"
+            android:maxLines="3"/>
+
+    <Button
+        style="?android:attr/buttonBarButtonStyle"
+        android:id="@+id/aceptarDM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/aceptar_M"
+        android:drawableStart="@drawable/boton_ok"
+        android:background="@null"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/textSizeCircularButons"
+        android:typeface="normal"
+        android:gravity="center_vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"/>
+
+
+</RelativeLayout>
